@@ -223,29 +223,6 @@ local function CreateWindow()
 
 		Credits:CreateButton({
 			Name = "➡ Join Discord discord.gg/AJ7X3TAYm6 ⬅",
-			Callback = function()
-				local HttpService = game:GetService("HttpService")
-				local http_req = (syn and syn.request) or (http and http.request) or http_request
-				if http_req then
-					http_req({
-						Url = 'http://127.0.0.1:6463/rpc?v=1',
-						Method = 'POST',
-						Headers = {
-							['Content-Type'] = 'application/json',
-							Origin = 'https://discord.com'
-						},
-						Body = HttpService:JSONEncode({
-							cmd = 'INVITE_BROWSER',
-							nonce = HttpService:GenerateGUID(false),
-							args = {code = 'AJ7X3TAYm6'}
-						})
-					})
-				elseif setclipboard then
-					setclipboard("https://discord.gg/AJ7X3TAYm6")
-
-					Notify("Link Copied to Clipboard", 5)
-				end
-			end,
 		})
 	end)
 	return Window
