@@ -177,7 +177,7 @@ local function CreateWindow()
 					local queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
 
 					if queueteleport then
-						queueteleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/alyssagithub/Scripts/main/Script%20Hub%20-%20Inferno%20X.lua"))()')
+						queueteleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/Dark-Scripts/Master-Punching-Sim/main/Games"))()')
 					end
 				end
 			end,
@@ -253,4 +253,4 @@ end
 
 return Player, Rayfield, Click, comma, Notify, CreateWindow
 
--- local Player, Rayfield, Click, comma, Notify, CreateWindow = loadstring(game:HttpGet("https://raw.githubusercontent.com/alyssagithub/Scripts/main/Inferno%20X%20Scripts/Variables.lua"))()
+-- local Player, Rayfield, Click, comma, Notify, CreateWindow = loadstring(game:HttpGet("https://raw.githubusercontent.com/Dark-Scripts/Master-Punching-Sim/main/AutoFarm"))()
