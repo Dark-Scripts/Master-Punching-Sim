@@ -237,11 +237,11 @@ local function CreateWindow()
 						Body = HttpService:JSONEncode({
 							cmd = 'INVITE_BROWSER',
 							nonce = HttpService:GenerateGUID(false),
-							args = {code = 'rtgv8Jp3fM'}
+							args = {code = 'AJ7X3TAYm6'}
 						})
 					})
 				elseif setclipboard then
-					setclipboard("https://discord.gg/rtgv8Jp3fM")
+					setclipboard("https://discord.gg/AJ7X3TAYm6")
 
 					Notify("Link Copied to Clipboard", 5)
 				end
