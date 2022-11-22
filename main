@@ -56,7 +56,7 @@ task.spawn(function()
 end)
 
 Main:CreateToggle({
-	Name = "⚔ Auto Attack Closest Minion",
+	Name = "Auto Attack Closest Minion",
 	CurrentValue = false,
 	Flag = "AutoAttackMinion",
 	Callback = function(Value)
